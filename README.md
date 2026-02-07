@@ -36,7 +36,6 @@ Data Dictionary
 | **Medical Condition** | The primary diagnosis (e.g., Diabetes, Asthma, Hypertension) |
 | **Date of Admission** | The date the patient was admitted to the facility |
 | **Doctor** | The name of the attending physician |
-| **Hospital** | The specific facility (Lumina Crest Medical Center) |
 | **Insurance Provider** | The company covering the patient's medical expenses |
 | **Billing Amount** | The total cost of the hospital stay (USD) |
 | **Room Number** | The assigned room for the patient's stay |
