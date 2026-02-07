@@ -42,3 +42,36 @@ Data Dictionary
 | **Discharge Date** | The date the patient left the hospital |
 | **Medication** | The primary medication prescribed during the stay |
 | **Test Results** | The outcome of clinical tests (Normal, Abnormal, Inconclusive) |
+
+## 3. Data Cleaning & Transformation
+
+Data integrity is crucial in healthcare analytics. Before building the dashboard, I performed the following cleaning steps in Excel to ensure the dataset was accurate and ready for analysis:
+
+* **Standardized Name Formatting:** Used the `PROPER` function and removed leading/trailing spaces to ensure patient names were consistent across the 10,000+ records.
+* **Created Age Brackets:** Used a nested `IF` statement (or `IFS`) to categorize patients into demographic groups (e.g., 0-18, 19-35, 36-50, 51-65, 66+). This allowed for more meaningful trend analysis than individual ages.
+* **De-duplication:** Performed a systematic check for duplicate patient IDs and records using Excel's **Remove Duplicates** tool to ensure the billing totals were not artificially inflated.
+* **Data Type Validation:** Verified that 'Billing Amount' was formatted as Currency and 'Admission/Discharge' dates were formatted correctly to enable time-series calculations.
+
+## 4. Key Insights & Visualizations
+
+The **Lumina Crest Interactive Dashboard** allows for real-time exploration of hospital performance. Below are the primary insights discovered during the analysis:
+
+* **Insurance & Revenue:** Analysis of **Average Billing per Insurance Provider** revealed that Medicare and Blue Cross Blue Shield have a higher average billing cost, suggesting a higher concentration of intensive care cases or specific elective procedures within those networks.
+* **Demographic Demand:** By using the **Age Bracket** slicer, data shows that the 35-64 age group represents the highest volume of patients for across all diseases, directly correlating to a higher demand for specific maintenance medications.
+* **Resource Allocation:** The **Medications per Age Group** chart identifies that pediatric patients (0-17) are most frequently prescribed Ibuprofen and Lipitor, while the 65+ bracket shows a sharp demand for Aspirin and Ibuprofen, signaling a need for more concentrated pharmacy inventory for seniors.
+* **Clinical Distribution:** The **Blood Type per Gender** visualization confirms a balanced distribution, ensuring that the hospital’s blood bank inventory levels are currently aligned with the patient population's biological needs.
+
+> **Note:** To view these insights dynamically, use the slicers located on the left-hand side of the `Dashboard` sheet in the provided `.xlsx` file.
+
+## 5. Conclusion & Recommendations
+
+The analysis of the Lumina Crest dataset highlights a clear correlation between patient age demographics and financial outcomes. By utilizing the interactive dashboard, the hospital can shift from reactive management to proactive resource planning.
+
+# Strategic Recommendations:
+* **Targeted Pharmacy Inventory:** Since the 35-64 age bracket shows the highest volume in medication needs, the hospital should optimize supply chain contracts for chronic disease medications (e.g., obesity and diabetes treatments) to reduce procurement costs.
+* **Insurance Contract Review:** With significant variance in **Average Billing per Provider**, the finance department should investigate why specific providers show higher costs to ensure reimbursement rates are aligned with the complexity of care provided.
+* **Specialized Care Staffing:** The data indicates high utilization rates for Obesity and Diabetes within the middle-age demographics. Lumina Crest should consider increasing specialized nursing staff during peak admission periods identified in the seasonal data.
+* **Future Scaling:** To improve this analysis, I recommend integrating a "Length of Stay" metric in future iterations to calculate the direct correlation between bed occupancy and total billing efficiency.
+
+---
+**Technical Note:** This project demonstrates proficiency in Excel data modeling, Visualization, and data interpretation for business dashboards.
