@@ -20,7 +20,7 @@ I developed an interactive Excel dashboard that centralizes complex clinical dat
 
 The dataset used for this analysis was sourced from **Kaggle** and contains synthetic patient records designed to mirror real-world hospital data.
 
-* **Dataset Source:** [Kaggle Healthcare Dataset]
+* **Dataset Source:** [[Kaggle Healthcare Dataset]](https://www.kaggle.com/datasets/prasad22/healthcare-dataset)
 * **File Name:** The raw data is available in this repository as `healthcare_dataset.csv`.
 
 Data Dictionary
