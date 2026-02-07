@@ -48,7 +48,7 @@ Data Dictionary
 Data integrity is crucial in healthcare analytics. Before building the dashboard, I performed the following cleaning steps in Excel to ensure the dataset was accurate and ready for analysis:
 
 * **Standardized Name Formatting:** Used the `PROPER` function and removed leading/trailing spaces to ensure patient names were consistent across the 10,000+ records.
-* **Created Age Brackets:** Used a nested `IF` statement (or `IFS`) to categorize patients into demographic groups (e.g., 0-18, 19-35, 36-50, 51-65, 66+). This allowed for more meaningful trend analysis than individual ages.
+* **Created Age Brackets:** Used a nested `IF` statement (or `IFS`) to categorize patients into demographic groups (e.g., 0-17, 18-34, 35-64, 65+). This allowed for more meaningful trend analysis than individual ages.
 * **De-duplication:** Performed a systematic check for duplicate patient IDs and records using Excel's **Remove Duplicates** tool to ensure the billing totals were not artificially inflated.
 * **Data Type Validation:** Verified that 'Billing Amount' was formatted as Currency and 'Admission/Discharge' dates were formatted correctly to enable time-series calculations.
 
