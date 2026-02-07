@@ -16,6 +16,8 @@ I developed an interactive Excel dashboard that centralizes complex clinical dat
 * **Average Billing per Insurance Provider:** Financial breakdown to identify high-revenue and high-cost partnerships.
 * **Diseases per Age Group:** Epidemiological trends to assist in specialized department staffing.
 
+Dashboard is found in Lumina_Crest_Medical_Center_Dashboard.xlsx
+
 ## 2. Data Dictionary & Sources
 
 The dataset used for this analysis was sourced from **Kaggle** and contains synthetic patient records designed to mirror real-world hospital data.
